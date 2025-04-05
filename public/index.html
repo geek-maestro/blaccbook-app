@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BlaccBook App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        text-align: center;
+        max-width: 800px;
+        width: 100%;
+      }
+      .logo {
+        margin-bottom: 30px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      .description {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+      .features {
+        text-align: left;
+        background-color: #111;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+      .feature {
+        margin-bottom: 15px;
+      }
+      .feature-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #FFC107;
+      }
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+      .card {
+        background-color: #111;
+        border-radius: 8px;
+        padding: 20px;
+        width: calc(50% - 20px);
+        min-width: 280px;
+      }
+      .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #FFC107;
+      }
+      .card-content {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+      @media (max-width: 768px) {
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <svg width="200" height="200" viewBox="0 0 200 200">
+          <rect width="200" height="200" rx="40" fill="black" stroke="white" stroke-width="2"/>
+          <path d="M45 55H70C76.0751 55 81 59.9249 81 66V94C81 100.075 76.0751 105 70 105H45C38.9249 105 34 100.075 34 94V66C34 59.9249 38.9249 55 45 55Z" fill="white"/>
+          <path d="M45 125H70C76.0751 125 81 129.925 81 136V164C81 170.075 76.0751 175 70 175H45C38.9249 175 34 170.075 34 164V136C34 129.925 38.9249 125 45 125Z" fill="white"/>
+          <path d="M130 55H155C161.075 55 166 59.9249 166 66V94C166 100.075 161.075 105 155 105H130C123.925 105 119 100.075 119 94V66C119 59.9249 123.925 55 130 55Z" fill="white"/>
+          <path d="M130 125H155C161.075 125 166 129.925 166 136V164C166 170.075 161.075 175 155 175H130C123.925 175 119 170.075 119 164V136C119 129.925 123.925 125 130 125Z" fill="white"/>
+          <path d="M76 57L124 57" stroke="white" stroke-width="8" stroke-linecap="round"/>
+          <path d="M76 143L124 143" stroke="white" stroke-width="8" stroke-linecap="round"/>
+          <circle cx="100" cy="100" r="8" fill="white"/>
+        </svg>
+      </div>
+      
+      <h1>BlaccBook App</h1>
+      
+      <div class="description">
+        A React Native mobile chat application designed for seamless communication and booking platform integration.
+        The app leverages Firebase for backend services, providing real-time messaging, notifications, and user-friendly mobile experiences.
+      </div>
+      
+      <div class="features">
+        <h2>Key Features</h2>
+        
+        <div class="feature">
+          <div class="feature-title">Service Discovery</div>
+          <div>Find and book services with an intuitive search interface. Filter by location, price, rating and more.</div>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-title">Real-time Chat</div>
+          <div>Seamless messaging with vendors including image attachments and notification support.</div>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-title">Voice Calls</div>
+          <div>In-app audio calling with all standard phone features (accept, reject, end call).</div>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-title">Booking System</div>
+          <div>Schedule services with preferred date and time slots. View booking history and manage appointments.</div>
+        </div>
+        
+        <div class="feature">
+          <div class="feature-title">Secure Payments</div>
+          <div>Multiple payment options including credit cards, debit cards, and digital wallets.</div>
+        </div>
+      </div>
+      
+      <div class="card-container">
+        <div class="card">
+          <div class="card-title">Technology Stack</div>
+          <div class="card-content">
+            <ul>
+              <li>React Native & Expo</li>
+              <li>Firebase Authentication</li>
+              <li>Firestore Database</li>
+              <li>Firebase Storage</li>
+              <li>Push Notifications</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-title">Mobile Experience</div>
+          <div class="card-content">
+            <p>The BlaccBook app is optimized for mobile devices and provides a rich user experience with:</p>
+            <ul>
+              <li>Intuitive navigation</li>
+              <li>Dark mode interface</li>
+              <li>Native integrations</li>
+              <li>Offline capabilities</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        This is a landing page for the BlaccBook mobile app. The app itself should be run on a mobile device or emulator.
+        <p>© 2025 BlaccBook. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

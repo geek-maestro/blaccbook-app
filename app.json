@@ -5,21 +5,27 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#000000"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "url": "https://u.expo.dev/your-project-id"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.blaccbook.app"
+      "bundleIdentifier": "com.blaccbook.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to let you share photos with your merchants.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone for voice calls with merchants.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photos to let you share them with your merchants.",
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to find nearby services."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,7 +33,15 @@
         "backgroundColor": "#000000"
       },
       "package": "com.blaccbook.app",
-      "googleServicesFile": "./google-services.json"
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -50,16 +64,25 @@
           "photosPermission": "The app accesses your photos to let you share them with your merchants."
         }
       ],
-      "expo-router"
+      [
+        "expo-router"
+      ]
     ],
     "scheme": "blaccbook",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "extra": {
       "eas": {
-        "projectId": "your-project-id"
+        "projectId": "your-project-id" 
+      },
+      "router": {
+        "origin": false
       }
     },
     "experiments": {
-      "typedRoutes": true
+      "typedRoutes": true,
+      "tsconfigPaths": true
     }
   }
 }

@@ -27,7 +27,7 @@ task = "packager.installForAll"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "node web-server.js"
+args = "node direct-server.js"
 waitForPort = 5000
 
 [deployment]
@@ -40,3 +40,7 @@ externalPort = 80
 [[ports]]
 localPort = 8081
 externalPort = 8081
+
+[[ports]]
+localPort = 19006
+externalPort = 3000

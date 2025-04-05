@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
 
 // Create an express app to handle the basic web page
 const app = express();
@@ -22,7 +21,9 @@ app.get('/health', (req, res) => {
 
 // Fallback to index.html for all other routes
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  const indexPath = path.join(__dirname, 'public', 'index.html');
+  console.log(`Serving index.html from ${indexPath}`);
+  res.sendFile(indexPath);
 });
 
 // Start the express server

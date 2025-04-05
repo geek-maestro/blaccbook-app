@@ -1,0 +1,135 @@
+
+Module  
+
+Description  
+
+Splash screen  
+
+When user load the application splash screen will appear with brand logo  
+
+Registration  
+
+User can register with email using the following details  
+
+Name 
+
+Phone number  
+
+Password  
+
+Confirm password 
+
+Login  
+
+Phone number 
+
+Password 
+
+My profile  
+
+User can manage basic below details on my profile section:   
+
+Name  
+
+Phone number  
+
+Change password  
+
+Home page  
+
+User can access below details on home page:  
+
+Top picks  
+
+Featured listing  
+
+User can search on the application that will act as a public search and provide the best possible results along with filters:  
+
+Search by keyword  
+
+Filter by price 
+
+Filter by location  
+
+Filter by service type  
+
+Filter by ratings  
+
+Service   
+
+User can access below details on service list:  
+
+Type of service/title  
+
+Description 
+
+Price  
+
+Location  
+
+When user will choose the service provider they will access details page with below features:  
+
+Name  
+
+Description  
+
+Availability  
+
+Price 
+
+Location  
+
+Booking  
+
+User will select service provider based on these things  
+
+Availability 
+
+Ratings  
+
+Reviews 
+
+Price  
+
+Location: Allow user to pin drop service provider location  
+
+Booking  
+
+User can book the service with below option:  
+
+Apply promo code 
+
+Choose date and time  
+
+User will choose preferred time and date for service  
+
+User will able to schedule service on convenient time  
+
+View available time slots  
+
+Add your other details  
+
+Payment options  
+
+Payment confirmation/booking details  
+
+Users can also view their past booking they have made here with booking details. They can rate merchant user based on their experience  
+
+ 
+
+Users can cancel the booking if they have any issue, the system will keep some charges and refund the fixed amount to the same source of payment. 
+
+ 
+
+User pay for services securely using payments methods  
+
+Credit card  
+
+Debit card  
+
+Digital wallets  
+
+ 
+
+ActiveX control 
+

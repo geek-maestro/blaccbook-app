@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,13 +24,14 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#000000"
       },
       "package": "com.blaccbook.app",
       "googleServicesFile": "./google-services.json"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
       [
@@ -48,12 +49,17 @@
         {
           "photosPermission": "The app accesses your photos to let you share them with your merchants."
         }
-      ]
+      ],
+      "expo-router"
     ],
+    "scheme": "blaccbook",
     "extra": {
       "eas": {
         "projectId": "your-project-id"
       }
+    },
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
